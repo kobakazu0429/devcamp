@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>開発合宿</title>
+</head>
+<body>
+  <!-- htmlはここから書いてください.   -->
+  <ul id="ul"></ul>
+  <button onclick="func()">let’s check!</button>
+
+  <script>
+    // javascriptはここから書いてください.
+    function func() {
+      let ul = document.getElementById('ul');
+
+      for(let i = 0; i <= 50; i++) {
+        let li = document.createElement('li');
+        li.textContent = '項目' + i;
+        ul.appendChild(li);
+      }
+
+      document.body.appendChild(ul);
+    }
+  </script>
+</body>
+</html>
